@@ -29,7 +29,7 @@ $(function (){
     });
 
     //delete shopping list item on click, first target the delete button
-    $('.shopping-list').on('click', '.shopping-item-delete', function(event) {                                                                                                                                                
+    $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
         //then remove the closest li element
         $(this).closest('li').remove();
     });
