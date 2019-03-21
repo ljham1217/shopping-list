@@ -38,8 +38,10 @@ $(function (){
         $(this).find('.shopping-item').toggleClass('.shopping-item__checked'); 
     });
 */
-    $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {   
-        $(this).closest('li').find('.shopping-item').toggleClass('.shopping-item__checked'); 
+
+    $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
+        console.log($(this).closest('li').find('.shopping-item'));  
+        $(this).closest('li').find('span.shopping-item').toggleClass('.shopping-item__checked'); 
     });
 
 })
